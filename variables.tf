@@ -1,3 +1,11 @@
+variable "region" {
+  description = "enter region"
+  type        = string
+}
+variable "profile" {
+  description = "enter profile"
+  type        = string
+}
 variable "kms_name" {
   description = "enter kms_name"
   type        = string
@@ -31,10 +39,7 @@ variable "subnetid_2" {
   description = "enter subnetid 2"
   type        = string
 }
-variable "subnetid_3" {
-  description = "enter subnetid 3"
-  type        = string
-}
+
 variable "security_group_id" {
   description = "enter security group id"
   type        = string
