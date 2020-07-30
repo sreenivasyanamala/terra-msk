@@ -10,11 +10,7 @@ resource "aws_msk_cluster" "msk-cluster" {
   broker_node_group_info {
     instance_type   = var.broker_node_instance_type
     ebs_volume_size = var.volume_size
-    client_subnets = [
-      "${var.subnetid_1}",
-      "${var.subnetid_2}",
-      "${var.subnetid_3}",
-    ]
+    client_subnets = ["${var.subnetid_1}", "${var.subnetid_2}"]
     security_groups = ["${var.security_group_id}"]
   }
 
